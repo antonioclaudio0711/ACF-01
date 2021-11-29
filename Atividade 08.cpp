@@ -1,43 +1,59 @@
 #include<stdio.h>
-#include<locale.h>
 #include<math.h>
+#include<locale.h>
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int i, transacao;
-	float valor, valor_total_vista, valor_total_prazo, valor_total, prestacao;
-	valor_total_vista = 0;
-	valor_total_prazo = 0;
+	int i, idade, contagemA, contagemB, contagemC, contagemD, contagemE;
+	float porcentagemA, porcentagemE;
+	contagemA = 0;
+	contagemB = 0;
+	contagemC = 0;
+	contagemD = 0;
+	contagemE = 0;
 	
 	for(i=1; i<=15; i++)
 	{
-		printf("\nInsira 1 para transações à vista e 2 para transações à prazo:");
-		scanf("%i",&transacao);
+		printf("Insira a sua idade:");
+		scanf("%i",&idade);
 		
-		if(transacao == 1)
+		if (idade <= 15)
 		{
-			printf("\nInsira o valor da transação à vista:");
-			scanf("%f",&valor);
-			valor_total_vista = valor_total_vista + valor;
+			contagemA = contagemA + 1;
 		}
-			else if(transacao == 2)
+			else if (idade >= 16 && idade <= 30)
 			{
-				printf("\nInsira o valor da transação à prazo:");
-				scanf("%f",&valor);
-				valor_total_prazo = valor_total_prazo + valor;
+				contagemB = contagemB + 1;
 			}
+				else if (idade >= 31 && idade <= 45)
+				{
+					contagemC = contagemC + 1;
+				}	
+					else if (idade >= 46 && idade <= 60)
+					{
+						contagemD = contagemD + 1;
+					}
+						else if (idade >= 61)
+						{
+							contagemE = contagemE + 1;
+						}
+					
+			
 	}
 	
-	printf("\nO valor total das compras à vista é de R$ %.2f.", valor_total_vista);
-	printf("\nO valor total das compras à prazo é de R$ %.2f.", valor_total_prazo);
+	printf("Existem %i pessoas na 1º faixa etária.", contagemA);
+	printf("\nExistem %i pessoas na 2º faixa etária.", contagemB);
+	printf("\nExistem %i pessoas na 3º faixa etária.", contagemC);
+	printf("\nExistem %i pessoas na 4º faixa etária.", contagemD);
+	printf("\nExistem %i pessoas na 5º faixa etária.", contagemE);
 	
-	valor_total = valor_total_vista + valor_total_prazo;
+	printf("\n************");
 	
-	printf("\nO valor total das compras realizadas é de R$ %.2f.", valor_total);
+	porcentagemA = 100 * contagemA / 15;
+	printf("\n %f por cento das pessoas compõem a primeira faixa etária.", porcentagemA);
 	
-	prestacao = valor_total_prazo / 3;
-	
-	printf("\nO valor da primeira prestação das compras à prazo é de R$ %.2f.", prestacao);
+	porcentagemE = 100 * contagemE / 15;
+	printf("\n %f por cento das pessoas compõem a última faixa etária.", porcentagemE);
 }

@@ -1,34 +1,24 @@
 #include<stdio.h>
-#include<locale.h>
 #include<math.h>
+#include<locale.h>
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int numero, maior_numero, menor_numero;
+	int i, idade, contagem;
+	contagem = 0;
 	
-	printf("Insira um número inteiro e positivo:");
-	scanf("%i",&numero);
-	maior_numero = numero;
-	menor_numero = numero; 
-	
-	while(numero != 0 && numero > 0)
+	for(i=1; i<=10; i++)
 	{
-		if(numero > maior_numero)
-		{
-			maior_numero = numero;
-		}
+		printf("Insira sua idade:");
+		scanf("%i",&idade);
 		
-		if(numero < menor_numero)
+		if(idade >= 18)
 		{
-			menor_numero = numero;
+			contagem = contagem + 1;
 		}
-		
-		printf("Insira um número inteiro e positivo:");
-		scanf("%i",&numero);
 	}
 	
-	printf("\nO maior valor inserido é %i.", maior_numero);
-	printf("\nO menor valor inserido é %i.", menor_numero);
+	printf("Das pessoas que inseriram sua idade, %i possuem 18 anos ou mais.", contagem);
 }

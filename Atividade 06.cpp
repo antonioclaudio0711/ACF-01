@@ -1,3 +1,9 @@
+/*
+5 reais o ingresso ---> serão vendidos 120 ingressos (despesas = 200)
+4,5 reais o ingresso ---> serão vendidos 146 ingressos
+4 reais o ingresso ---> serão vendidos 
+*/
+
 #include<stdio.h>
 #include<locale.h>
 #include<math.h>
@@ -6,44 +12,83 @@ main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int i, idade, contagem, contagem02, contagem03;
-	float altura, peso, soma_altura, media_altura, porcentagem;
-	contagem = 0;
-	contagem02 = 0;
-	contagem03 = 0;
-	soma_altura = 0;
+	int escolha, quantidade_de_ingressos_vendidos;
+	float lucro;
 	
-	for(i=1; i<=25; i++)
+	printf("*****************************************************************");
+	printf("\n*****			MENU DE OPÇÕES			*********");
+	printf("\n***** 1 - Ingresso vendido a R$ 5,00			*********");
+	printf("\n***** 2 - Ingresso vendido a R$ 4,50			*********");
+	printf("\n***** 3 - Ingresso vendido a R$ 4,00			*********");
+	printf("\n***** 4 - Ingresso vendido a R$ 3,50			*********");
+	printf("\n***** 5 - Ingresso vendido a R$ 3,00			*********");
+	printf("\n***** 6 - Ingresso vendido a R$ 2,50			*********");
+	printf("\n***** 7 - Ingresso vendido a R$ 2,00			*********");
+	printf("\n***** 8 - Ingresso vendido a R$ 1,50			*********");
+	printf("\n***** 9 - Ingresso vendido a R$ 1,00			*********");
+	printf("\n*****************************************************************");
+	printf("\nEscolha uma das opções mostradas acima:");
+	scanf("%i",&escolha);
+	
+	switch(escolha)
 	{
-		printf("\nInsira sua idade:");
-		scanf("%i",&idade);
-		printf("\nInsira a sua altura:");
-		scanf("%f",&altura);
-		printf("\nInsira seu peso:");
-		scanf("%f",&peso);
-		printf("\n***********************");
+		case 1:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 5 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 5,00, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
 		
-		if(idade > 50)
-		{
-			contagem = contagem + 1; 
-		}
-			else if(idade >= 10 && idade <= 20)
-			{
-				contagem02 = contagem02 + 1;
-				soma_altura = soma_altura + altura; 
-			}
+		case 2:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 4.5 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 4,50, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
 		
-		if(peso < 40)
-		{
-			contagem03 = contagem03 + 1;
-		}
+		case 3:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 4 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 4,00, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 4:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 3.5 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 3,50, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 5:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 3 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 3,00, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 6:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 2.5 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 2,50, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 7:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 2 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 2,00, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 8:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 1.5 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 1,50, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		case 9:
+			quantidade_de_ingressos_vendidos = 120 + (escolha - 1) * 26; 
+			lucro = 1 * quantidade_de_ingressos_vendidos - 200;
+			printf("Com o ingresso sendo vendido a R$ 1,00, serão vendidos %i ingressos, obtendo-se um lucro de R$ %.2f;", quantidade_de_ingressos_vendidos, lucro);
+		break;
+		
+		default:
+			printf("Selecione uma opção válida!");
 	}
-	
-	printf("\nDentre as pessoas analisadas, %i possuem mais de 50 anos.", contagem);
-	
-	media_altura = soma_altura / contagem02;
-	printf("\nA média da altura de pessoas com idade entre 10 e 20 anos é de: %.2f.", media_altura);
-	
-	porcentagem = 100 * contagem03 / 25;
-	printf("\n%f por cento das pessoas analisadas possuem peso inferior a 40 kg.", porcentagem);
+	printf("\n");
+	printf("\nO maior lucro esperado será de R$ 493,00. Valor obtido através da venda de 198 ingressos com valor unitário de R$ 3,50.");
 }

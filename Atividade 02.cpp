@@ -6,18 +6,16 @@ main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int i, limite_superior, limite_inferior, soma;
-	soma = 0;
+	int i, numero;
+	float soma;
 	
-	printf("Insira o primeiro número a ser considerado na soma:");
-	scanf("%i",&limite_inferior);
-	printf("Insira o último número a ser considerado na soma:");
-	scanf("%i",&limite_superior);
+	printf("\nInsira um valor inteiro e positivo:");
+	scanf("%i",&numero);
 	
-	for(i=limite_inferior; i<=limite_superior; i++)
+	for(i=1; i<=numero; i++)
 	{
-		soma = soma + i;
+		soma = soma + 1 / i;
 	}
 	
-	printf("A soma dos valores considerados entre %i e %i é: %i.", limite_inferior, limite_superior, soma);
+	printf("\nA soma requerida é de: %f.", soma);
 }

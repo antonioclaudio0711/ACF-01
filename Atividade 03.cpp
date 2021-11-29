@@ -6,29 +6,25 @@ main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int i, numero, maior_numero, menor_numero;
+	int i, j, contagem;
+	double produto;
+	contagem = 0;
+	produto = 1;
 	
-	printf("\nInsira um número:");
-	scanf("%i",&numero);
-	maior_numero = numero;
-	menor_numero = numero;
-	
-	for(i=1; i<=4; i++)
+	for(i=92; i<=1478; i++)
 	{
-		printf("\nInsira um número:");
-		scanf("%i",&numero);
-		
-		if(numero > maior_numero)
+		for(j=1; j<=i; j++)
 		{
-			maior_numero = numero;
+			if(i%j == 0)
+			{
+				contagem = contagem + 1;
+			}
 		}
-		
-		if(numero < menor_numero)
+		if(contagem == 2)
 		{
-			menor_numero = numero;
+			produto = produto * i;
 		}
+		contagem = 0;
 	}
-	
-	printf("\nDentre os números inseridos, o maior número é: %i.", maior_numero);
-	printf("\nDentre os números inseridos, o menor número é: %i.", menor_numero);
+	printf("O produto dos números primos existentes entre 92 e 1478 é: %lf.", produto);
 }

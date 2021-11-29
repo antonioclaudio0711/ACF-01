@@ -5,17 +5,14 @@
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
+	
 	int i;
-	float N, soma;
-	soma = 0;
 	
-	printf("Escreva um número:");
-	scanf("%f",&N);
-	
-	for(i=0; i<=N; i++)
+	for(i=1000; i<=2000; i++)
 	{
-		soma = soma + i;
+		if(i%11 == 5)
+		{
+			printf("%i - ", i);
+		}
 	}
-	
-	printf("A soma dos valores até %.2f é: %.2f", N, soma);
 }
