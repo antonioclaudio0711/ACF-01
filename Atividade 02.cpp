@@ -1,21 +1,22 @@
 #include<stdio.h>
-#include<locale.h>
 #include<math.h>
+#include<locale.h>
+#include<stdlib.h>
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int i, numero;
-	float soma;
+	int vetor[10];
+	int i;
 	
-	printf("\nInsira um valor inteiro e positivo:");
-	scanf("%i",&numero);
-	
-	for(i=1; i<=numero; i++)
+	for(i=0; i<10; i++)
 	{
-		soma = soma + 1 / i;
+		vetor[i] = rand()%10;
 	}
 	
-	printf("\nA soma requerida é de: %f.", soma);
+	for(i=0; i<10; i++)
+	{
+		printf("%i  ", vetor[i]);
+	}
 }
