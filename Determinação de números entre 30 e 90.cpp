@@ -12,7 +12,7 @@ main()
 	
 	for(i=1; i<=10; i++)
 	{
-		printf("Insira um número:");
+		printf("Insira um nÃºmero:");
 		scanf("%f",&numero);
 		
 		if(numero > 30 && numero < 90)
@@ -21,5 +21,5 @@ main()
 		}
 	}
 	
-	printf("Dentre os números inseridos, %i estão entre 30 e 90.", contagem);
+	printf("Dentre os nÃºmeros inseridos, %i estÃ£o entre 30 e 90.", contagem);
 }
