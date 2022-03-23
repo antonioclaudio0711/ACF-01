@@ -10,11 +10,11 @@ main()
 	
 	int N, resposta01;
 	
-	printf("RESOLUÇÃO DO PRIMEIRO PROBLEMA");
+	printf("RESOLUÃ‡ÃƒO DO PRIMEIRO PROBLEMA");
 	printf("\nInsira um valor inteiro e positivo:");
 	scanf("%i",&N);
 	resposta01 = programa01(N);
-	printf("A soma dos números inteiros entre 01 e %i é: %i", N, resposta01);
+	printf("A soma dos nÃºmeros inteiros entre 01 e %i Ã©: %i", N, resposta01);
 }
 
 int programa01(int N)
