@@ -9,7 +9,7 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	
 	int valor;
-	printf("RESOLUÇÃO DO QUINTO PROBLEMA\n");
+	printf("RESOLUÃ‡ÃƒO DO QUINTO PROBLEMA\n");
 	printf("Insira um valor inteiro:");
 	scanf("%i",&valor);
 	
@@ -20,10 +20,10 @@ void programa05(int x)
 {
 	if(x>0)
 	{
-		printf("O valor %i é positivo!", x);
+		printf("O valor %i Ã© positivo!", x);
 	}
 	else if(x<0)
 	{
-		printf("O valor %i é negativo!", x);
+		printf("O valor %i Ã© negativo!", x);
 	}
 }
