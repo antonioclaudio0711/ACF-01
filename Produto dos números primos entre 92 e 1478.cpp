@@ -26,5 +26,5 @@ main()
 		}
 		contagem = 0;
 	}
-	printf("O produto dos números primos existentes entre 92 e 1478 é: %lf.", produto);
+	printf("O produto dos nÃºmeros primos existentes entre 92 e 1478 Ã©: %lf.", produto);
 }
