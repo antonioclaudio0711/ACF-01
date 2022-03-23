@@ -10,7 +10,7 @@ main()
 	
 	int x, z, resposta10;
 	
-	printf("RESOLUÇÃO DO DÉCIMO PROBLEMA\n");
+	printf("RESOLUÃ‡ÃƒO DO DÃ‰CIMO PROBLEMA\n");
 	printf("Insira um valor:");
 	scanf("%i",&x);
 	printf("Insira um valor:");
@@ -18,7 +18,7 @@ main()
 	
 	resposta10 = programa10(x, z);
 	
-	printf("O valor de %i elevado a %i é %i.", x, z, resposta10);
+	printf("O valor de %i elevado a %i Ã© %i.", x, z, resposta10);
 }
 
 int programa10(int x, int y)
