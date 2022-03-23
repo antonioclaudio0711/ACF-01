@@ -42,7 +42,7 @@ main()
 	}
 	
 	media_idades = soma_idades / 10;
-	printf("\nA média das idades das pessoas analisadas é de %.2f anos.", media_idades);
+	printf("\nA mÃ©dia das idades das pessoas analisadas Ã© de %.2f anos.", media_idades);
 	printf("\nDentre as pessoas analisadas, %i possuem mais de 90 kg tendo menos de 1,50 m de altura.", contagem01);
 	
 	porcentagem = 100 * contagem03 / contagem02;
