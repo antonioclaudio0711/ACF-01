@@ -1,12 +1,12 @@
 /* 
-Faça um algoritmo que mostre os números de 01 a 500 em ordem decrescente.
+FaÃ§a um algoritmo que mostre os nÃºmeros de 01 a 500 em ordem decrescente.
 */
 
 #include<stdio.h>
 #include<locale.h>
 #include<math.h>
  /*
- Decréscimo de x ---> i-=x
+ DecrÃ©scimo de x ---> i-=x
  */
 main()
 {
