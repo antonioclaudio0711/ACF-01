@@ -1,5 +1,5 @@
 /*
-Faça um algoritmo que mostre os números de 1 a 500 que são divisíveis por 7;
+FaÃ§a um algoritmo que mostre os nÃºmeros de 1 a 500 que sÃ£o divisÃ­veis por 7;
 */
 
 #include<stdio.h>
