@@ -10,13 +10,13 @@ main()
 	
 	float raio, resposta04;
 	
-	printf("RESOLU«√O DO QUARTO PROBLEMA\n");
+	printf("RESOLU√á√ÉO DO QUARTO PROBLEMA\n");
 	printf("Insira o valor do raio da esfera em estudo:");
 	scanf("%f",&raio);
 	
 	resposta04 = programa04(raio);
 	
-	printf("O volume da esfera em estudo È: %.2f", resposta04);
+	printf("O volume da esfera em estudo √©: %.2f", resposta04);
 }
 
 float programa04(float x)
