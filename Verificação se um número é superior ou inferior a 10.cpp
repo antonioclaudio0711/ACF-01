@@ -7,18 +7,18 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	float valor;
 	
-	printf("Insira um número qualquer:");
+	printf("Insira um nÃºmero qualquer:");
 	scanf("%f",&valor);
 	if (valor > 10)
 	{
-		printf("O valor %.2f é maior que 10!", valor);
+		printf("O valor %.2f Ã© maior que 10!", valor);
 	}
 		else if (valor < 10)
 		{
-			printf("O valor %.2f é menor que 10!", valor);
+			printf("O valor %.2f Ã© menor que 10!", valor);
 		}
 			else if (valor = 10)
 			{
-				printf("O valor %.2f é igual à 10!", valor);
+				printf("O valor %.2f Ã© igual Ã  10!", valor);
 			}
 }
