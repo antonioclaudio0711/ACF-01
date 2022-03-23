@@ -49,10 +49,10 @@ main()
 	}
 	
 	printf("\nDentre as pessoas analisadas, %i possuem peso inferior a 60 kg, tendo idade superior a 50 anos.", contagem01);
-	printf("\nDentre as pessoas analisadas, %i possuem cabelo ruivo e n„o possuem olhos azuis.", contagem04);
+	printf("\nDentre as pessoas analisadas, %i possuem cabelo ruivo e n√£o possuem olhos azuis.", contagem04);
 	
 	media = soma_idades / contagem02;
-	printf("\nA mÈdia de idade das pessoas que possuem menos de 1,50 m de altura È: %f.", media);
+	printf("\nA m√©dia de idade das pessoas que possuem menos de 1,50 m de altura √©: %f.", media);
 	
 	porcentagem = 5 * contagem03;
 	printf("\n%f por cento das pessoas analisadas possuem olhos azuis.", contagem03);
