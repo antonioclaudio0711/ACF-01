@@ -1,5 +1,5 @@
 /*
-Faça um algoritmo que mostre a tabuada de multiplicação do número digitado pelo usuário;
+FaÃ§a um algoritmo que mostre a tabuada de multiplicaÃ§Ã£o do nÃºmero digitado pelo usuÃ¡rio;
 */
 
 #include<stdio.h>
@@ -13,7 +13,7 @@ main()
 	int i;
 	float numero;
 	
-	printf("Insira o número que você quer que seja multiplicado:");
+	printf("Insira o nÃºmero que vocÃª quer que seja multiplicado:");
 	scanf("%f",&numero);
 	
 	for(i=0; i<=10; i=i+1)
