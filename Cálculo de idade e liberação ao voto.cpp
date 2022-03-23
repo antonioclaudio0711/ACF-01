@@ -16,10 +16,10 @@ main()
 	
 	if (idade < 16)
 	{
-		printf("Você possui %i anos e não está apto a votar!", idade);
+		printf("VocÃª possui %i anos e nÃ£o estÃ¡ apto a votar!", idade);
 	}
 		else if (idade >= 16)
 		{
-			printf("Você possui %i anos e está apto a votar!", idade);
+			printf("VocÃª possui %i anos e estÃ¡ apto a votar!", idade);
 		}
 }
