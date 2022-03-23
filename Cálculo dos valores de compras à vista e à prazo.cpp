@@ -13,31 +13,31 @@ main()
 	
 	for(i=1; i<=15; i++)
 	{
-		printf("\nInsira 1 para transações à vista e 2 para transações à prazo:");
+		printf("\nInsira 1 para transaÃ§Ãµes Ã  vista e 2 para transaÃ§Ãµes Ã  prazo:");
 		scanf("%i",&transacao);
 		
 		if(transacao == 1)
 		{
-			printf("\nInsira o valor da transação à vista:");
+			printf("\nInsira o valor da transaÃ§Ã£o Ã  vista:");
 			scanf("%f",&valor);
 			valor_total_vista = valor_total_vista + valor;
 		}
 			else if(transacao == 2)
 			{
-				printf("\nInsira o valor da transação à prazo:");
+				printf("\nInsira o valor da transaÃ§Ã£o Ã  prazo:");
 				scanf("%f",&valor);
 				valor_total_prazo = valor_total_prazo + valor;
 			}
 	}
 	
-	printf("\nO valor total das compras à vista é de R$ %.2f.", valor_total_vista);
-	printf("\nO valor total das compras à prazo é de R$ %.2f.", valor_total_prazo);
+	printf("\nO valor total das compras Ã  vista Ã© de R$ %.2f.", valor_total_vista);
+	printf("\nO valor total das compras Ã  prazo Ã© de R$ %.2f.", valor_total_prazo);
 	
 	valor_total = valor_total_vista + valor_total_prazo;
 	
-	printf("\nO valor total das compras realizadas é de R$ %.2f.", valor_total);
+	printf("\nO valor total das compras realizadas Ã© de R$ %.2f.", valor_total);
 	
 	prestacao = valor_total_prazo / 3;
 	
-	printf("\nO valor da primeira prestação das compras à prazo é de R$ %.2f.", prestacao);
+	printf("\nO valor da primeira prestaÃ§Ã£o das compras Ã  prazo Ã© de R$ %.2f.", prestacao);
 }
