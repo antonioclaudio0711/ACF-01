@@ -12,7 +12,7 @@ main()
 	
 	for(i=1; i<=10; i++)
 	{
-		printf("Insira um número:");
+		printf("Insira um nÃºmero:");
 		scanf("%i",&numero);
 		
 		for(j=1; j<=numero; j++)
@@ -31,5 +31,5 @@ main()
 		contagem = 0;
 	}
 	
-	printf("Dentre os números inseridos, %i são números primos.", contagem_primos);
+	printf("Dentre os nÃºmeros inseridos, %i sÃ£o nÃºmeros primos.", contagem_primos);
 }
