@@ -11,17 +11,17 @@ main()
 	
 	printf("Insira o primeiro nome do cliente:");
 	scanf("%s", nome_do_cliente);
-	printf("Insira o valor total referente às compras realizadas no ano passado pelo cliente em questão:");
+	printf("Insira o valor total referente Ã s compras realizadas no ano passado pelo cliente em questÃ£o:");
 	scanf("%f", valor_das_compras);
 	
 	if(valor_das_compras < 1000)
 	{
 		bonus = 0.1 * valor_das_compras;
-		printf("Você recebeu um bônus de 10%, o que equivale a %.2f.", bonus);
+		printf("VocÃª recebeu um bÃ´nus de 10%, o que equivale a %.2f.", bonus);
 	}
 		else if (valor_das_compras >= 1000)
 		{
 			bonus = 0.15 * valor_das_compras;
-			printf("Você recebeu um bônus de 15%, o que equivale a %.2f.", bonus);
+			printf("VocÃª recebeu um bÃ´nus de 15%, o que equivale a %.2f.", bonus);
 		}
 }
