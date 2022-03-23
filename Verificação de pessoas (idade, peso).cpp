@@ -28,5 +28,5 @@ main()
 	
 	printf("\nDentre as pessoas analisadas, %i possuem mais de 90 quilos.", contagem01);
 	media = soma_idades / 7;
-	printf("\nA média das idades das pessoas analisadas é de %.2f.", media);
+	printf("\nA mÃ©dia das idades das pessoas analisadas Ã© de %.2f.", media);
 }
