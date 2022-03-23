@@ -37,11 +37,11 @@ main()
 	}
 	
 	media = idade_total / 7;
-	printf("\nA média de idade do grupo em estudo é de: %.2f anos.", media);
+	printf("\nA mÃ©dia de idade do grupo em estudo Ã© de: %.2f anos.", media);
 	
 	media_mulheres = idade_mulheres / contagem_mulheres;
-	printf("\nA média de idade do grupo de mulheres em estudo é de: %.2f anos.", media_mulheres);
+	printf("\nA mÃ©dia de idade do grupo de mulheres em estudo Ã© de: %.2f anos.", media_mulheres);
 	
 	media_homens = idade_homens / contagem_homens;
-	printf("\nA média de idade do grupo de homens em estudo é de: %.2f anos.", media_homens);
+	printf("\nA mÃ©dia de idade do grupo de homens em estudo Ã© de: %.2f anos.", media_homens);
 }
