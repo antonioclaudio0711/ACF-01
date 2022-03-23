@@ -13,7 +13,7 @@ main()
 	
 	for(i=1; i<=10; i++)
 	{
-		printf("Insira um número:");
+		printf("Insira um nÃºmero:");
 		scanf("%i",&numero);
 		
 		if(numero%2 == 0)
@@ -36,7 +36,7 @@ main()
 		contagem = 0;
 	}
 	
-	printf("A soma dos números pares inseridos é de: %i.", soma_pares);
-	printf("\nA soma dos números primos inderidos é de: %i.", soma_primos);
+	printf("A soma dos nÃºmeros pares inseridos Ã© de: %i.", soma_pares);
+	printf("\nA soma dos nÃºmeros primos inderidos Ã© de: %i.", soma_primos);
 }
 
