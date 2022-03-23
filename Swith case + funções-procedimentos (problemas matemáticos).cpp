@@ -18,31 +18,31 @@ main()
 	int G, H, I;
 	
 	printf("***************************************************************");
-	printf("\n			MENU DE OPÇÕES		");
-	printf("\n1 - Calcular a área de um triângulo");
+	printf("\n			MENU DE OPÃ‡Ã•ES		");
+	printf("\n1 - Calcular a Ã¡rea de um triÃ¢ngulo");
 	printf("\n2 - Ordenar de forma crescente 03 valores");
 	printf("\n3 - Ordenar de forma decrescente 03 valores");
-	printf("\n4 - Calcular as raízes de uma equação do 2º grau (Ax² + Bx + C)");
+	printf("\n4 - Calcular as raÃ­zes de uma equaÃ§Ã£o do 2Âº grau (AxÂ² + Bx + C)");
 	printf("\n***************************************************************");
-	printf("\nSelecione uma das opções:");
+	printf("\nSelecione uma das opÃ§Ãµes:");
 	scanf("%i",&escolha);
 	
 	switch(escolha)
 	{
 		case 01:
-			printf("Você selecionou a opção 'Calcular a área de um triângulo'!");
-			printf("\nInsira o valor da base do triângulo:");
+			printf("VocÃª selecionou a opÃ§Ã£o 'Calcular a Ã¡rea de um triÃ¢ngulo'!");
+			printf("\nInsira o valor da base do triÃ¢ngulo:");
 			scanf("%f",&base);
-			printf("\nInsira o valor da altura do triângulo:");
+			printf("\nInsira o valor da altura do triÃ¢ngulo:");
 			scanf("%f",&altura);
 			
 			resp1 = area_triangulo(base, altura);
 			
-			printf("A área do triângulo com as dimensões especificadas é: %.2f", resp1);
+			printf("A Ã¡rea do triÃ¢ngulo com as dimensÃµes especificadas Ã©: %.2f", resp1);
 		break;
 			
 		case 02:
-			printf("Você selecionou a opção 'Ordenar de forma crescente 03 valores'!");
+			printf("VocÃª selecionou a opÃ§Ã£o 'Ordenar de forma crescente 03 valores'!");
 			printf("\nInsira o primeiro valor:");
 			scanf("%f",&A);
 			printf("\nInsira o segundo valor:");
@@ -54,7 +54,7 @@ main()
 		break;
 			
 		case 03:
-			printf("Você selecionou a opção 'Ordenar de forma decrescente 03 valores'!");
+			printf("VocÃª selecionou a opÃ§Ã£o 'Ordenar de forma decrescente 03 valores'!");
 			printf("\nInsira o primeiro valor:");
 			scanf("%f",&D);
 			printf("\nInsira o segundo valor:");
@@ -66,7 +66,7 @@ main()
 		break;
 			
 		case 04:
-			printf("Você selecionou a opção 'Calcular as raízes de uma equação do 2º grau (Ax² + Bx + C)'!");
+			printf("VocÃª selecionou a opÃ§Ã£o 'Calcular as raÃ­zes de uma equaÃ§Ã£o do 2Âº grau (AxÂ² + Bx + C)'!");
 			printf("\nInsira o valor de A:");
 			scanf("%i",&G);
 			printf("\nInsira o valor de B:");
@@ -79,12 +79,12 @@ main()
 			
 		default:
 			{
-				printf("Selecione uma opção válida!");
+				printf("Selecione uma opÃ§Ã£o vÃ¡lida!");
 			}
 	}
 }
 
-// Calcular a área de um triângulo
+// Calcular a Ã¡rea de um triÃ¢ngulo
 float area_triangulo(float x, float y)
 {
 	float resposta;
@@ -99,11 +99,11 @@ void ordem_crescente(float x, float y, float z)
 	{
 		if(y < z)
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", x, y, z);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", x, y, z);
 		}
 		else
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", x, z, y);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", x, z, y);
 		}
 	}
 	
@@ -111,11 +111,11 @@ void ordem_crescente(float x, float y, float z)
 	{
 		if(x < z)
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", y, x, z);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", y, x, z);
 		}
 		else
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", y, z, x);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", y, z, x);
 		}
 	}
 	
@@ -123,11 +123,11 @@ void ordem_crescente(float x, float y, float z)
 	{
 		if(x < y)
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", z, x, y);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", z, x, y);
 		}
 		else
 		{
-			printf("A ordem crescente dos valores inseridos é: %.2f %.2f %.2f", z, y, x);
+			printf("A ordem crescente dos valores inseridos Ã©: %.2f %.2f %.2f", z, y, x);
 		}
 	}
 }
@@ -139,11 +139,11 @@ void ordem_decrescente(float x, float y, float z)
 	{
 		if(y > z)
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", x, y, z);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", x, y, z);
 		}
 		else
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", x, z, y);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", x, z, y);
 		}
 	}
 	
@@ -151,11 +151,11 @@ void ordem_decrescente(float x, float y, float z)
 	{
 		if(x > z)
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", y, x, z);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", y, x, z);
 		}
 		else
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", y, z, x);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", y, z, x);
 		}
 	}
 	
@@ -163,16 +163,16 @@ void ordem_decrescente(float x, float y, float z)
 	{
 		if(x > y)
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", z, x, y);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", z, x, y);
 		}
 		else
 		{
-			printf("A ordem decrescente dos valores inseridos é: %.2f %.2f %.2f", z, y, x);
+			printf("A ordem decrescente dos valores inseridos Ã©: %.2f %.2f %.2f", z, y, x);
 		}
 	}
 }
 
-//Calcular as raízes de uma equação do 2º grau (Ax² + Bx + C)
+//Calcular as raÃ­zes de uma equaÃ§Ã£o do 2Âº grau (AxÂ² + Bx + C)
 void bhaskara(int x, int y, int z)
 {
 	float delta, raiz;
@@ -188,5 +188,5 @@ void bhaskara(int x, int y, int z)
 	raiz1 = resp1 / (2 * x);
 	raiz2 = resp2 / (2 * x);
 	
-	printf("As raízes da equação com os valores inseridos são: %.2f e %.2f", raiz1, raiz2);
+	printf("As raÃ­zes da equaÃ§Ã£o com os valores inseridos sÃ£o: %.2f e %.2f", raiz1, raiz2);
 }
