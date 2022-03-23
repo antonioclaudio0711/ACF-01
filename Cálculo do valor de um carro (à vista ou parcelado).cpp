@@ -12,7 +12,7 @@ main()
 	scanf("%f",&valor_do_carro);
 	
 	avista = 0.8 * valor_do_carro;
-	printf("\nValor do carro à vista: %.2f.", avista);
+	printf("\nValor do carro Ã  vista: %.2f.", avista);
 	printf("\n***************");
 	
 	parcela06 = 1.03 * valor_do_carro;
