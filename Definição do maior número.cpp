@@ -7,16 +7,16 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	float numero01, numero02;
 	
-	printf("Insira o primeiro número:");
+	printf("Insira o primeiro nÃºmero:");
 	scanf("%f",&numero01);
-	printf("Insira o segundo número:");
+	printf("Insira o segundo nÃºmero:");
 	scanf("%f",&numero02);
 	if (numero01 > numero02)
 	{
-		printf("O maior número dentre os inseridos é: %.2f", numero01);
+		printf("O maior nÃºmero dentre os inseridos Ã©: %.2f", numero01);
 	}
 		else if (numero02 > numero01)
 		{
-			printf("O maior número dentre os inseridos é: %.2f", numero02);
+			printf("O maior nÃºmero dentre os inseridos Ã©: %.2f", numero02);
 		}
 }
