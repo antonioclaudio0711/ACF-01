@@ -7,38 +7,38 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	int numero01, numero02, numero03;
 	
-	printf("Insira o primeiro número:");
+	printf("Insira o primeiro nÃºmero:");
 	scanf("%i",&numero01);
-	printf("Insira o segundo número:");
+	printf("Insira o segundo nÃºmero:");
 	scanf("%i",&numero02);
-	printf("Insira o terceiro número:");
+	printf("Insira o terceiro nÃºmero:");
 	scanf("%i",&numero03);
 	if (numero01 == numero02)
 	{
-		printf("Insira três valores distintos!");			
+		printf("Insira trÃªs valores distintos!");			
 	}
 		else if (numero02 == numero03)
 		{
-			printf("Insira três valores distintos!");
+			printf("Insira trÃªs valores distintos!");
 		}
 			else if (numero03 == numero01)
 			{
-				printf("Insira três valores distintos!");
+				printf("Insira trÃªs valores distintos!");
 			}	
 				else if (numero01 == numero02 && numero01 == numero03)
 				{
-					printf("Insira três valores distintos!");
+					printf("Insira trÃªs valores distintos!");
 				}
 					else if (numero01 < numero02 && numero01 < numero03)
 					{
-						printf("O menor número dentre os inseridos é: %i", numero01);
+						printf("O menor nÃºmero dentre os inseridos Ã©: %i", numero01);
 					}
 						else if (numero02 < numero01 && numero02 < numero03)
 						{
-							printf("O menor número dentre os inseridos é: %i", numero02);
+							printf("O menor nÃºmero dentre os inseridos Ã©: %i", numero02);
 						}
 							else if (numero03 < numero01 && numero03 < numero02)
 							{
-								printf("O menor número dentre os inseridos é: %i", numero03);
+								printf("O menor nÃºmero dentre os inseridos Ã©: %i", numero03);
 							}			
 }
