@@ -11,17 +11,17 @@ main()
 	printf("Insira a sua idade:");
 	scanf("%i",&idade);
 	
-	//Saída de dados
+	//SaÃ­da de dados
 	if (idade > 21)
 	{
-		printf("Você possui mais que 21 anos!");
+		printf("VocÃª possui mais que 21 anos!");
 	}
 		else if (idade < 21)
 		{
-			printf("Você possui menos que 21 anos!");
+			printf("VocÃª possui menos que 21 anos!");
 		}
 			else if (idade = 21)
 			{
-				printf("Você possui exatamente 21 anos!");
+				printf("VocÃª possui exatamente 21 anos!");
 			}
 }
