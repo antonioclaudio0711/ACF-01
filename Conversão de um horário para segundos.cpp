@@ -8,7 +8,7 @@ main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	printf("RESOLU«√O DO SEGUNDO PROBLEMA\n");
+	printf("RESOLU√á√ÉO DO SEGUNDO PROBLEMA\n");
 	programa02();
 }
 
@@ -16,7 +16,7 @@ void programa02()
 {
 	int horas, minutos, segundos, total;
 	
-	printf("Insira o valor referente ‡s horas (01 - 24):");
+	printf("Insira o valor referente √†s horas (01 - 24):");
 	scanf("%i",&horas);
 	printf("Insira o valor referente aos minutos (00 - 59):");
 	scanf("%i",&minutos);
