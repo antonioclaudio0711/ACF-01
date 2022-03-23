@@ -42,7 +42,7 @@ main()
 	printf("\nDentre as pessoas analisadas, %i possuem mais de 50 anos.", contagem);
 	
 	media_altura = soma_altura / contagem02;
-	printf("\nA média da altura de pessoas com idade entre 10 e 20 anos é de: %.2f.", media_altura);
+	printf("\nA mÃ©dia da altura de pessoas com idade entre 10 e 20 anos Ã© de: %.2f.", media_altura);
 	
 	porcentagem = 100 * contagem03 / 25;
 	printf("\n%f por cento das pessoas analisadas possuem peso inferior a 40 kg.", porcentagem);
