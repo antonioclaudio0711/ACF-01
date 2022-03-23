@@ -2,39 +2,28 @@
 #include<locale.h>
 #include<math.h>
 
-void primo(int x);
+void programa02();
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
-
-	int valor;
-	float resposta;
 	
-	printf("Insira um número:");
-	scanf("%i",&valor);
-	
-	primo(valor);
+	printf("RESOLUÇÃO DO SEGUNDO PROBLEMA\n");
+	programa02();
 }
 
-void primo(int x)
+void programa02()
 {
-	int i, cont;
-	cont = 0;
+	int horas, minutos, segundos, total;
 	
-	for(i=1; i<=x; i++)
-	{
-		if(x%i == 0)
-		{
-			cont = cont + 1;
-		}
-	}
-	if(cont == 2)
-	{
-		printf("O número %i é primo!", x);
-	}
-	else
-	{
-		printf("O número %i não é primo!", x);
-	}
+	printf("Insira o valor referente às horas (01 - 24):");
+	scanf("%i",&horas);
+	printf("Insira o valor referente aos minutos (00 - 59):");
+	scanf("%i",&minutos);
+	printf("Insira o valor referente aos segundos (01 - 59):");
+	scanf("%i",&segundos);
+	
+	total = (horas * 3600) + (minutos * 60) + segundos;
+	
+	printf("%i horas, %i minutos e %i segundos correspondem a %i segundos.", horas, minutos, segundos, total);
 }

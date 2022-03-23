@@ -1,37 +1,29 @@
 #include<stdio.h>
-#include<math.h>
 #include<locale.h>
+#include<math.h>
 
-float programa05(int x);
+void programa05(int x);
 
 main()
 {
-	int valor;
-	float resposta;
-	
 	setlocale(LC_ALL,"Portuguese");
 	
-	printf("Insira um número inteiro e positivo:");
+	int valor;
+	printf("RESOLUÇÃO DO QUINTO PROBLEMA\n");
+	printf("Insira um valor inteiro:");
 	scanf("%i",&valor);
 	
-	resposta = programa05(valor);
-	printf("O valor da soma de acordo com o número inserido é: %.2f", resposta);	
+	programa05(valor);
 }
 
-float programa05(int x)
+void programa05(int x)
 {
-	int i;
-	float soma, fatorial, resposta, inverso;
-	fatorial = 1;
-	soma = 0;
-		
-	for(i=1; i<=x; i++)
+	if(x>0)
 	{
-		fatorial = fatorial * i;
-		inverso = 1/fatorial;
-		soma = soma + inverso;
+		printf("O valor %i é positivo!", x);
 	}
-
-	resposta = soma + 1;
-	return resposta;
+	else if(x<0)
+	{
+		printf("O valor %i é negativo!", x);
+	}
 }

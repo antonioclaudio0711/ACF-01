@@ -2,43 +2,30 @@
 #include<math.h>
 #include<locale.h>
 
-int programa04(int x, int y, int z, int w);
+float programa04(float x);
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int hora_inicio, minutos_inicio, hora_final, minutos_final;
-	int resposta;
+	float raio, resposta04;
 	
-	printf("Insira a hora em que se iniciou a partida (00 -- 23):");
-	scanf("%i",&hora_inicio);
-	printf("Insira os minutos em que se iniciou a partida (00 -- 59):");
-	scanf("%i",&minutos_inicio);
-	printf("Insira a hora em que se encerrou a partida (00 -- 23):");
-	scanf("%i",&hora_final);
-	printf("Insira os minutos em que se encerrou a partida (00 - 59):");
-	scanf("%i",&minutos_final);
+	printf("RESOLUÇÃO DO QUARTO PROBLEMA\n");
+	printf("Insira o valor do raio da esfera em estudo:");
+	scanf("%f",&raio);
 	
-	resposta = programa04(hora_inicio, minutos_inicio, hora_final, minutos_final);
-	printf("A partida em questão apresentou uma duração de %i minutos.", resposta);
+	resposta04 = programa04(raio);
+	
+	printf("O volume da esfera em estudo é: %.2f", resposta04);
 }
 
-int programa04(int x, int y, int z, int w)
+float programa04(float x)
 {
-	int duracao_horas, duracao_minutos, duracao_total;
+	float volume, pi, cubo;
+	pi = 3.14;
 	
-	if(z < x)
-	{
-		duracao_horas = (z + 24) - x;
-	}
-	else
-	{
-		duracao_horas = z - x;
-	}
+	cubo = pow(x,3);
+	volume = 1.3 * pi * cubo;
 	
-	duracao_minutos = w - y;
-	
-	duracao_total = (duracao_horas * 60) + duracao_minutos;
-	return duracao_total;
+	return volume;
 }

@@ -2,33 +2,42 @@
 #include<locale.h>
 #include<math.h>
 
-float programa06(int x);
+void programa06(int x, float y);
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int valor;
-	float soma;
+	int escolhasexo;
+	float alt;
 	
-	printf("Insira um valor:");
-	scanf("%i",&valor);
+	printf("********************\n");
+	printf("	SEXO		\n");
+	printf("1 - Feminino\n");
+	printf("2 - Masculino\n");
+	printf("********************\n");
+	printf("\n");
+	printf("Selecione uma das opções para indicar seu sexo:");
+	scanf("%i",&escolhasexo);
+	printf("\n");
+	printf("Agora, insira sua altura:");
+	scanf("%f",&alt);
 	
-	soma = programa06(valor);
-	
-	printf("A soma da sequência definida pelo valor inserido é: %.2f", soma);
+	programa06(escolhasexo, alt);
 }
 
-float programa06(int x)
+void programa06(int x, float y)
 {
-	int i;
-	float soma;
-	soma = 0;
+	float pesoideal;
 	
-	for(i=1; i<=x; i++)
+	if(x == 1)
 	{
-		soma = soma + (pow(i, 2) + 1) / (i + 3); 
+		pesoideal = (62.1 * y) - 44.7;
+		printf("O peso ideal para uma mulher com altura de %.2fm é %.2fKG.", y, pesoideal);
 	}
-	
-	return soma;
+	else if(x == 2)
+	{
+		pesoideal = (72.7 * y) - 58;
+		printf("O peso ideal para um homem com altura de %.2fm é %.2fKG.", y, pesoideal);
+	}
 }

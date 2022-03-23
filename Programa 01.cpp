@@ -1,41 +1,30 @@
+#include<locale.h>
 #include<stdio.h>
 #include<math.h>
-#include<locale.h>
 
-int programa01(int x, int y, int z);
+int programa01(int N);
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int a, b, c, resposta;
+	int N, resposta01;
 	
-	printf("Insira um valor:");
-	scanf("%i",&a);
-	if(a>1)
-	{
-		printf("Insira um valor:");
-		scanf("%i",&b);
-		printf("Insira um valor:");
-		scanf("%i",&c);
-	}
-	
-	resposta = programa01(a, b, c);
-	printf("A soma dos valores entre os números %i e %i é %i.", b, c, resposta);
+	printf("RESOLUÇÃO DO PRIMEIRO PROBLEMA");
+	printf("\nInsira um valor inteiro e positivo:");
+	scanf("%i",&N);
+	resposta01 = programa01(N);
+	printf("A soma dos números inteiros entre 01 e %i é: %i", N, resposta01);
 }
 
-int programa01(int x, int y, int z)
+int programa01(int N)
 {
 	int i, soma;
 	soma = 0;
 	
-	for(i=y; i<=z; i++)
+	for(i=2; i<=N; i++)
 	{
-		if(i%x == 0)
-		{
-			soma = soma + i;
-		}
+		soma = soma + i;
 	}
-	
 	return soma;
 }

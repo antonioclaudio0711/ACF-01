@@ -2,47 +2,44 @@
 #include<locale.h>
 #include<math.h>
 
-void programa03(int x);
+int programa03(int x, int y);
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int a;
+	int valor01, valor02, resposta03;
 	
+	printf("RESOLUÇÃO DO TERCEIRO PROBLEMA\n");
 	printf("Insira um valor:");
-	scanf("%i",&a);
-	printf("***********************");
+	scanf("%i",&valor01);
+	printf("Insira um valor:");
+	scanf("%i",&valor02);
 	
-	programa03(a);
+	resposta03 = programa03(valor01, valor02);
+	
+	if(resposta03 == 0)
+	{
+		printf("Como %i é divisível por %i, retorna-se 0.", valor01, valor02);
+	}
+	else
+	{
+		printf("Próximo divisor = %i", resposta03);
+	}
 }
 
-void programa03(int x)
+int programa03(int x, int y)
 {
-	int i, valor, maior_valor, menor_valor;
-	float soma, media;
-	soma = 0;
-	maior_valor = x;
-	menor_valor = x;
-	
-	for(i=1; i<=4; i++)
+	if(x%y == 0)
 	{
-		printf("\nInsira um valor:");
-		scanf("%i",&valor);
-		printf("***********************");
-		if(valor>maior_valor)
-		{
-			maior_valor = valor;
-		}
-		else if(valor<menor_valor)
-		{
-			menor_valor = valor;
-		}
-		soma = soma + valor;
+		return 0;
 	}
-	media = (soma + x) / 5;
-	printf("\nO maior valor inserido é: %i", maior_valor);
-	printf("\nO menor valor inserido é: %i", menor_valor);
-	printf("\nA média dos valores inseridos é: %.2f", media);
+	else
+	{
+		while(x%y != 0)
+		{
+			y++;
+		}
+		return y;
+	}
 }
-	

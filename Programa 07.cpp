@@ -1,37 +1,41 @@
 #include<stdio.h>
-#include<locale.h>
 #include<math.h>
+#include<locale.h>
 
-float sequencia(int x);
+float programa07(float x);
 
 main()
 {
 	setlocale(LC_ALL,"Portuguese");
 	
-	int valor;
-	float resposta;
+	float valor;
+	float resposta07;
 	
+	printf("RESOLUÇÃO DO SÉTIMO PROBLEMA\n");
 	printf("Insira um valor:");
-	scanf("%i",&valor);
-	if(valor >= 1)
-	{
-		resposta = sequencia(valor);
-		printf("A soma da sequência é: %.2f", resposta);
-	}
-	else
-	{
-		printf("Insira um valor inteiro maior ou igual a 1!");
-	}
+	scanf("%f",&valor);
+	
+	resposta07 = programa07(valor);
+	
+	printf("A média aritmética dos valores inseridos é: %.2f", resposta07);
 }
 
-float sequencia(int x)
+float programa07(float x)
 {
-	float S, i;
-	S = 0;
+	float soma, contagem;
+	float media;
+	soma = x;
+	contagem = 1;
 	
-	for(i=1; i<=x; i++)
+	while(x != 0)
 	{
-		S = S + (1/i);  
+		printf("Insira um valor:");
+		scanf("%f",&x);
+		
+		soma = soma + x;
+		contagem = contagem + 1; 
 	}
-	return S;
+	media = soma / contagem;
+	
+	return media; 
 }
