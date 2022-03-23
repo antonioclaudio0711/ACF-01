@@ -14,13 +14,13 @@ main()
 	// Processamento de dados
 	idade_faltante = 18 - idade;
 	
-	// SaÌda de dados
+	// Sa√≠da de dados
 	if (idade >= 18)
 	{
-		printf("O usu·rio est· apto a tirar a CNH!");
+		printf("O usu√°rio est√° apto a tirar a CNH!");
 	}
 	else
 	{
-		printf("Faltam %i anos para que o usu·rio esteja apto a tirar a CNH!", idade_faltante);
+		printf("Faltam %i anos para que o usu√°rio esteja apto a tirar a CNH!", idade_faltante);
 	}
 }
