@@ -7,9 +7,9 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	int dia, mes, dia_do_ano;
 	
-	printf("Insira a numeração referente ao dia:");
+	printf("Insira a numeraÃ§Ã£o referente ao dia:");
 	scanf("%i",&dia);
-	printf("Insira a numeração referente ao mês:");
+	printf("Insira a numeraÃ§Ã£o referente ao mÃªs:");
 	scanf("%i",&mes);
 	if (mes == 1)
 	{
@@ -59,5 +59,5 @@ main()
 												{
 													dia_do_ano = 365 - dia;
 												}
-	printf("O dia %i do mês %i corresponde ao dia %i do ano.", dia, mes, dia_do_ano);
+	printf("O dia %i do mÃªs %i corresponde ao dia %i do ano.", dia, mes, dia_do_ano);
 }
