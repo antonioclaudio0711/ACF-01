@@ -18,25 +18,25 @@ main()
 	// Processamento de dados
 	media = (nota01 + nota02 + nota03) / 3;
 	
-	// Saída de dados
+	// SaÃ­da de dados
 	if (media >= 8.5)
 	{
 		printf("O aluno pertence ao Conceito A: %f", media);
-		printf("\nO aluno está aprovado!");
+		printf("\nO aluno estÃ¡ aprovado!");
 	}
 	else if (media >= 7.5 && media < 8.5) 
     	{
 	    	printf("O aluno pertence ao Conceito B: %f", media);
-	    	printf("\nO aluno está aprovado!");
+	    	printf("\nO aluno estÃ¡ aprovado!");
 	    }
 		else if (media >= 6.0 && media < 7.0)
 			{
 				printf("O aluno pertence ao Conceito C: %f", media);
-				printf("\nO aluno está aprovado!");
+				printf("\nO aluno estÃ¡ aprovado!");
 			}
 			else if (media < 6.0)
 				{
 					printf("O aluno pertence ao Conceito D: %f", media);
-					printf("\nO aluno está reprovado!");
+					printf("\nO aluno estÃ¡ reprovado!");
 				}
 }
