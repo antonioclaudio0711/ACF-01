@@ -12,7 +12,7 @@ main() {
 	soma = 0;
 	contagem = 0;
 	
-	printf("Informe a dimens„o da matriz desejada:");
+	printf("Informe a dimens√£o da matriz desejada:");
 	scanf("%i",&tam);
 	
 	srand(time(NULL));
@@ -35,11 +35,11 @@ main() {
 		printf("\n");
 	}
 	
-	printf("\nVALORES ABAIXO DA DIAGONAL SECUND¡RIA\n");
+	printf("\nVALORES ABAIXO DA DIAGONAL SECUND√ÅRIA\n");
 	for(a=0; a<contagem; a++)
 	{
 		printf("[%i] ", vetor[a]);
 	}
 	
-	printf("\nA soma dos %i elementos destacados acima È: %i", contagem, soma);
+	printf("\nA soma dos %i elementos destacados acima √©: %i", contagem, soma);
 }
