@@ -21,7 +21,7 @@ main()
 	scanf("%i",&minutos_final);
 	
 	resposta = programa04(hora_inicio, minutos_inicio, hora_final, minutos_final);
-	printf("A partida em quest„o apresentou uma duraÁ„o de %i minutos.", resposta);
+	printf("A partida em quest√£o apresentou uma dura√ß√£o de %i minutos.", resposta);
 }
 
 int programa04(int x, int y, int z, int w)
