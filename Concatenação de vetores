@@ -21,7 +21,7 @@ setlocale(LC_ALL, "Portuguese");
 	printf("VETOR 1");
 	for (i=0; i<tam; i++)
 	{
-		printf("Insira um valor no índice %i: ", i+1);
+		printf("Insira um valor no Ã­ndice %i: ", i+1);
 		scanf("%i", &vet[i]);
 	}
 	printf("\n");
@@ -29,7 +29,7 @@ setlocale(LC_ALL, "Portuguese");
 	printf("VETOR 2");
 	for (i=0; i<tam; i++)
 	{
-		printf("Insira um valor no índice %i: ", i+1);
+		printf("Insira um valor no Ã­ndice %i: ", i+1);
 		scanf("%i", &vnum[i]);
 	}
 	printf("\n");
