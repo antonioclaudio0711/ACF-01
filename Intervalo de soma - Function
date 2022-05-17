@@ -11,11 +11,11 @@ main()
 	
 	setlocale(LC_ALL,"Portuguese");
 	
-	printf("Insira um número inteiro e positivo:");
+	printf("Insira um nÃºmero inteiro e positivo:");
 	scanf("%i",&valor);
 	
 	resposta = programa05(valor);
-	printf("O valor da soma de acordo com o número inserido é: %.2f", resposta);	
+	printf("O valor da soma de acordo com o nÃºmero inserido Ã©: %.2f", resposta);	
 }
 
 float programa05(int x)
