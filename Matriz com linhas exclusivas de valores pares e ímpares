@@ -20,7 +20,7 @@ main()
 		scanf("%i",&valor);
 		if (valor%2 == 0) {
 			if (contagem_par >= 12) {
-				printf("Não podem ser inseridos mais que 12 valores pares! Insira um valor ímpar.\n");
+				printf("NÃ£o podem ser inseridos mais que 12 valores pares! Insira um valor Ã­mpar.\n");
 			}
 			else {
 				vetor_par[contagem_par] = valor;
@@ -29,7 +29,7 @@ main()
 		} 
 		else {
 			if (contagem_impar >= 8) {
-				printf("Não podem ser inseridos mais que 08 valores ímpares! Insira um valor par.\n");
+				printf("NÃ£o podem ser inseridos mais que 08 valores Ã­mpares! Insira um valor par.\n");
 			}
 			else {
 				vetor_impar[contagem_impar] = valor;
