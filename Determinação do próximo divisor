@@ -10,7 +10,7 @@ main()
 	
 	int valor01, valor02, resposta03;
 	
-	printf("RESOLU«√O DO TERCEIRO PROBLEMA\n");
+	printf("RESOLU√á√ÉO DO TERCEIRO PROBLEMA\n");
 	printf("Insira um valor:");
 	scanf("%i",&valor01);
 	printf("Insira um valor:");
@@ -20,11 +20,11 @@ main()
 	
 	if(resposta03 == 0)
 	{
-		printf("Como %i È divisÌvel por %i, retorna-se 0.", valor01, valor02);
+		printf("Como %i √© divis√≠vel por %i, retorna-se 0.", valor01, valor02);
 	}
 	else
 	{
-		printf("PrÛximo divisor = %i", resposta03);
+		printf("Pr√≥ximo divisor = %i", resposta03);
 	}
 }
 
