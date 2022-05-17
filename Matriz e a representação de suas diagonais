@@ -79,7 +79,7 @@ void diagonal_secundaria(int x[linha][coluna])
 {
 	int i, j;
 	
-	printf("	   DIAGONAL SECUND¡RIA\n");
+	printf("	   DIAGONAL SECUND√ÅRIA\n");
 	for(i=0; i<linha; i++)
 	{
 		for(j=0; j<coluna; j++)
@@ -101,7 +101,7 @@ void diagonal_principal_secundaria(int x[linha][coluna])
 {
 	int i, j;
 	
-	printf("	DIAGONAL PRINCIPAL E SECUND¡RIA\n");
+	printf("	DIAGONAL PRINCIPAL E SECUND√ÅRIA\n");
 	for(i=0; i<linha; i++)
 	{
 		for(j=0; j<coluna; j++)
