@@ -15,7 +15,7 @@ main()
 	
 	for(i=0; i<10; i++)
 	{
-		printf("Insira um valor para o índice %i do vetor:", i);
+		printf("Insira um valor para o Ã­ndice %i do vetor:", i);
 		scanf("%i",&vetor[i]);
 		
 		if(vetor[i]%2 == 0)
@@ -29,10 +29,10 @@ main()
 			contagem_impar = contagem_impar + 1;
 		}
 	}
-	printf("Vetor de números pares: ");
+	printf("Vetor de nÃºmeros pares: ");
  	vetor01(contagem_par, vetor_par); 
 	printf("\n");
-	printf("Vetor de números ímpares: ");
+	printf("Vetor de nÃºmeros Ã­mpares: ");
 	vetor01(contagem_impar, vetor_impar); 
 }
 
