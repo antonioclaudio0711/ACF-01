@@ -11,7 +11,7 @@ main()
 	int valor;
 	float resposta;
 	
-	printf("Insira um número:");
+	printf("Insira um nÃºmero:");
 	scanf("%i",&valor);
 	
 	primo(valor);
@@ -31,10 +31,10 @@ void primo(int x)
 	}
 	if(cont == 2)
 	{
-		printf("O número %i é primo!", x);
+		printf("O nÃºmero %i Ã© primo!", x);
 	}
 	else
 	{
-		printf("O número %i não é primo!", x);
+		printf("O nÃºmero %i nÃ£o Ã© primo!", x);
 	}
 }
