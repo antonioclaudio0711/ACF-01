@@ -17,7 +17,7 @@ main()
 	printf("2 - Masculino\n");
 	printf("********************\n");
 	printf("\n");
-	printf("Selecione uma das opções para indicar seu sexo:");
+	printf("Selecione uma das opÃ§Ãµes para indicar seu sexo:");
 	scanf("%i",&escolhasexo);
 	printf("\n");
 	printf("Agora, insira sua altura:");
@@ -33,11 +33,11 @@ void programa06(int x, float y)
 	if(x == 1)
 	{
 		pesoideal = (62.1 * y) - 44.7;
-		printf("O peso ideal para uma mulher com altura de %.2fm é %.2fKG.", y, pesoideal);
+		printf("O peso ideal para uma mulher com altura de %.2fm Ã© %.2fKG.", y, pesoideal);
 	}
 	else if(x == 2)
 	{
 		pesoideal = (72.7 * y) - 58;
-		printf("O peso ideal para um homem com altura de %.2fm é %.2fKG.", y, pesoideal);
+		printf("O peso ideal para um homem com altura de %.2fm Ã© %.2fKG.", y, pesoideal);
 	}
 }
