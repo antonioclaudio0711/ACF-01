@@ -10,7 +10,7 @@ main()
 	
 	for(i=0; i<15; i++)
 	{
-		printf("Insira um valor para o índice %i:", i);
+		printf("Insira um valor para o Ã­ndice %i:", i);
 		scanf("%i",&vetor[i]);
 	}
 	
@@ -18,7 +18,7 @@ main()
 	{
 		if(vetor[i] == 30)
 		{
-			printf("\nvalor = 30; posição = %i", i);
+			printf("\nvalor = 30; posiÃ§Ã£o = %i", i);
 		}
 	}
 }
