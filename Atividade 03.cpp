@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+
+main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	int i, vet[10];
+	
+	for(i=0; i<10; i++)
+	{
+		printf("Insira o valor referente ao índice %i:", i+1);
+		scanf("%i", &vet[i]);
+	}
+	
+	printf("Índice Valor \n");
+	for(i=0; i<10; i++)
+	{
+		if(vet[i]%2 == 0)
+		{
+			printf("[%i]	[%i]\n", i, vet[i]);
+		}
+	}
+}
