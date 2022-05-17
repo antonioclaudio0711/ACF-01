@@ -11,13 +11,13 @@ main()
 	float valor;
 	float resposta07;
 	
-	printf("RESOLUÇÃO DO SÉTIMO PROBLEMA\n");
+	printf("RESOLUÃ‡ÃƒO DO SÃ‰TIMO PROBLEMA\n");
 	printf("Insira um valor:");
 	scanf("%f",&valor);
 	
 	resposta07 = programa07(valor);
 	
-	printf("A média aritmética dos valores inseridos é: %.2f", resposta07);
+	printf("A mÃ©dia aritmÃ©tica dos valores inseridos Ã©: %.2f", resposta07);
 }
 
 float programa07(float x)
