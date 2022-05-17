@@ -10,13 +10,13 @@ main()
 	
 	int valor, resposta09;
 	
-	printf("RESOLUÇÃO DO NONO PROBLEMA\n");
+	printf("RESOLUÃ‡ÃƒO DO NONO PROBLEMA\n");
 	printf("Insira um valor inteiro e positivo:");
 	scanf("%i",&valor);
 	
 	resposta09 = programa09(valor);
 	
-	printf("A soma dos divisores do número %i é %i.", valor, resposta09);
+	printf("A soma dos divisores do nÃºmero %i Ã© %i.", valor, resposta09);
 }
 
 int programa09(int x)
