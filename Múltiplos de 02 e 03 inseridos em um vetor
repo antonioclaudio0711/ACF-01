@@ -10,11 +10,11 @@ main()
 	
 	for(i=0; i<7; i++)
 	{
-		printf("Insira um valor para o índice %i:", i);
+		printf("Insira um valor para o Ã­ndice %i:", i);
 		scanf("%i", &vetor[i]);
 	}
 	
-	printf("Números múltiplos de 02: ");
+	printf("NÃºmeros mÃºltiplos de 02: ");
 	for(i=0; i<7; i++)
 	{
 		if(vetor[i]%2 == 0)
@@ -23,7 +23,7 @@ main()
 		}
 	}
 	
-	printf("\nNúmeros múltiplos de 03: ");
+	printf("\nNÃºmeros mÃºltiplos de 03: ");
 	for(i=0; i<7; i++)
 	{
 		if(vetor[i]%3 == 0)
@@ -32,7 +32,7 @@ main()
 		}
 	}
 	
-	printf("\nNúmeros múltiplos de 02 e 03: ");
+	printf("\nNÃºmeros mÃºltiplos de 02 e 03: ");
 	for(i=0; i<7; i++)
 	{
 		if(vetor[i]%2 == 0 && vetor[i]%3 == 0)
