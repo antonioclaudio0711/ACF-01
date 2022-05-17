@@ -21,7 +21,7 @@ main()
 	}
 	
 	resposta = programa01(a, b, c);
-	printf("A soma dos valores entre os números %i e %i é %i.", b, c, resposta);
+	printf("A soma dos valores entre os nÃºmeros %i e %i Ã© %i.", b, c, resposta);
 }
 
 int programa01(int x, int y, int z)
