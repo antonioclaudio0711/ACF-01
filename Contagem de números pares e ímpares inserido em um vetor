@@ -11,7 +11,7 @@ main()
 	
 	for(i=0; i<6; i++)
 	{
-		printf("Insira um valor para o índice %i:", i);
+		printf("Insira um valor para o Ã­ndice %i:", i);
 		scanf("%i", &vetor[i]);
 		
 		if(vetor[i]%2 == 0)
@@ -20,7 +20,7 @@ main()
 		}
 	}
 	
-	printf("Números pares inseridos no vetor: ");
+	printf("NÃºmeros pares inseridos no vetor: ");
 	for(i=0; i<6; i++)
 	{
 		if(vetor[i]%2 == 0)
@@ -30,7 +30,7 @@ main()
 	}
 	printf("\n***********************************");
 	
-	printf("\nNúmeros ímpares inseridos no vetor: ");
+	printf("\nNÃºmeros Ã­mpares inseridos no vetor: ");
 	for(i=0; i<6; i++)
 	{
 		if(vetor[i]%2 != 0)
@@ -40,8 +40,8 @@ main()
 	}
 	printf("\n***********************************");
 	
-	printf("\nForam inseridos %i números pares.", contagem_par);
+	printf("\nForam inseridos %i nÃºmeros pares.", contagem_par);
 	printf("\n***********************************");
 	
-	printf("\nForam inseridos %i números ímpares.", 6 - contagem_par);
+	printf("\nForam inseridos %i nÃºmeros Ã­mpares.", 6 - contagem_par);
 }
