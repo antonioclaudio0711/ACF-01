@@ -1,4 +1,4 @@
-// Aluno: Antônio Claudio Ferreira Filho
+// Aluno: AntÃ´nio Claudio Ferreira Filho
 
 #include<stdio.h>
 #include<math.h>
@@ -40,5 +40,5 @@ void jogada()
 		}
 	}
 	printf("***********************************************************\n");
-	printf("Ao lançar a moeda 100 vezes, obteve-se %i coroas e %i caras.", contagem_coroa, contagem_cara);
+	printf("Ao lanÃ§ar a moeda 100 vezes, obteve-se %i coroas e %i caras.", contagem_coroa, contagem_cara);
 }
