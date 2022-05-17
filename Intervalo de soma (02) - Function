@@ -16,7 +16,7 @@ main()
 	
 	soma = programa06(valor);
 	
-	printf("A soma da sequência definida pelo valor inserido é: %.2f", soma);
+	printf("A soma da sequÃªncia definida pelo valor inserido Ã©: %.2f", soma);
 }
 
 float programa06(int x)
