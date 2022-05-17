@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<math.h>
+#include<locale.h>
+
+void resposta (int x[]);
+
+main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	int vetor01[10], vetor02[10], i, j, vetor03[20];
+	
+	printf("Inserindo os valores para o primeiro vetor:\n");
+	for(i=0; i<10; i++)
+	{
+		printf("Insira um valor para o índice %i do vetor:", i);
+		scanf("%i",&vetor01[i]);
+		vetor03[i] = vetor01[i];
+		
+	}
+	printf("*************************************************\n");
+	printf("Inserindo os valores para o segundo vetor:\n");
+	for(j=0; j<10; j++)
+	{
+		printf("Insira um valor para o índice %i do vetor:", j);
+		scanf("%i",&vetor02[j]);
+		vetor03[10 + j] = vetor02[j];
+	}
+	printf("*************************************************\n");
+	
+	resposta (vetor03);
+}
+
+void resposta (int x[])
+{
+	int check, i, temp;
+	check = 1;
+	
+	printf("Vetor com os valores inseridos em ordem decrescente: ");
+	while(check == 1)
+	{
+		check = 0;
+		for(i=0; i<19; i++)
+		{
+			if(x[i] < x[i + 1])
+			{
+				check = 1;
+				temp = x[i];
+				x[i] = x[i + 1];
+				x[i + 1] = temp;
+			}
+		}
+	}
+	
+	for(i=0; i<20; i++)
+	{
+		printf("[%i] ", x[i]);
+	}
+}

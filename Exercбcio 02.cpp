@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<math.h>
+#include<locale.h>
+
+void vetor01 (int x, int* y);
+
+main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	
+	int contagem_par, contagem_impar;
+	int vetor[10], i, j, vetor_par[contagem_par], vetor_impar[contagem_impar];
+	contagem_par = 0;
+	contagem_impar = 0;
+	
+	for(i=0; i<10; i++)
+	{
+		printf("Insira um valor para o índice %i do vetor:", i);
+		scanf("%i",&vetor[i]);
+		
+		if(vetor[i]%2 == 0)
+		{
+			vetor_par[contagem_par] = vetor[i];
+			contagem_par = contagem_par + 1;
+		}
+		else
+		{
+			vetor_impar[contagem_impar] = vetor[i];
+			contagem_impar = contagem_impar + 1;
+		}
+	}
+	printf("Vetor de números pares: ");
+ 	vetor01(contagem_par, vetor_par); 
+	printf("\n");
+	printf("Vetor de números ímpares: ");
+	vetor01(contagem_impar, vetor_impar); 
+}
+
+void vetor01 (int x, int* y)
+{
+	int j;
+	
+	for(j=0; j<x; j++)
+ 	{
+ 		printf("[%i] ", y[j]);	
+	}
+}
