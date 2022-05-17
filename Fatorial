@@ -10,13 +10,13 @@ main()
 	
 	int valor, resposta08;
 	
-	printf("RESOLU«√O DO OITAVO PROBLEMA\n");
+	printf("RESOLU√á√ÉO DO OITAVO PROBLEMA\n");
 	printf("Insira um valor inteiro e positivo:");
 	scanf("%i",&valor);
 	
 	resposta08 = programa08(valor);
 	
-	printf("O valor de %i! È %i", valor, resposta08);
+	printf("O valor de %i! √© %i", valor, resposta08);
 }
 
 int programa08(int x)
