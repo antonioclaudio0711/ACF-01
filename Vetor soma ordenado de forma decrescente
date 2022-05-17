@@ -13,7 +13,7 @@ main()
 	printf("Inserindo os valores para o primeiro vetor:\n");
 	for(i=0; i<10; i++)
 	{
-		printf("Insira um valor para o índice %i do vetor:", i);
+		printf("Insira um valor para o Ã­ndice %i do vetor:", i);
 		scanf("%i",&vetor01[i]);
 		vetor03[i] = vetor01[i];
 		
@@ -22,7 +22,7 @@ main()
 	printf("Inserindo os valores para o segundo vetor:\n");
 	for(j=0; j<10; j++)
 	{
-		printf("Insira um valor para o índice %i do vetor:", j);
+		printf("Insira um valor para o Ã­ndice %i do vetor:", j);
 		scanf("%i",&vetor02[j]);
 		vetor03[10 + j] = vetor02[j];
 	}
