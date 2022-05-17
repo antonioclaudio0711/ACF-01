@@ -41,8 +41,8 @@ void programa03(int x)
 		soma = soma + valor;
 	}
 	media = (soma + x) / 5;
-	printf("\nO maior valor inserido é: %i", maior_valor);
-	printf("\nO menor valor inserido é: %i", menor_valor);
-	printf("\nA média dos valores inseridos é: %.2f", media);
+	printf("\nO maior valor inserido Ã©: %i", maior_valor);
+	printf("\nO menor valor inserido Ã©: %i", menor_valor);
+	printf("\nA mÃ©dia dos valores inseridos Ã©: %.2f", media);
 }
 	
