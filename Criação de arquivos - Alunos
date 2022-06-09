@@ -23,10 +23,10 @@ main() {
 	arquivo = fopen("ALUNOS.txt", "a");
 	
 	if(arquivo == NULL) {
-		printf("Problemas na criação do arquivo!");
+		printf("Problemas na criaÃ§Ã£o do arquivo!");
 	} else {
 		do{
-			printf("Insira o número do aluno:");
+			printf("Insira o nÃºmero do aluno:");
 			scanf("%i",&sala.numero);
 			fprintf(arquivo, "%i", sala.numero);
 			
