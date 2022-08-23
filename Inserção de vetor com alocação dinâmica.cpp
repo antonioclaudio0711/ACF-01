@@ -11,10 +11,10 @@ main() {
 	
 	v = (int *) malloc(tamanho * sizeof(int));
 	
-	printf("Digite a quantidade de valores que ser„o inseridos no vetor: ");
+	printf("Digite a quantidade de valores que ser√£o inseridos no vetor: ");
 	scanf("%i", &tamanho);
 	for(i=0; i<tamanho; i++) {
-		printf("\nDigite o valor do elemento de posiÁ„o %i do vetor: ", i);
+		printf("\nDigite o valor do elemento de posi√ß√£o %i do vetor: ", i);
 		scanf("%i", &v[i]);
 		
 		if(v[i] % 2 == 0) {
@@ -24,11 +24,11 @@ main() {
 		}
 	}
 	
-	printf("\nO vetor inserido È: ");
+	printf("\nO vetor inserido √©: ");
 	for(i=0; i<tamanho; i++) {
 		printf("%i ", v[i]);
 	}
-	printf("\nForam inseridos %i n˙meros pares e %i n˙meros Ìmpares no vetor.", qtd_par, qtd_impar);
+	printf("\nForam inseridos %i n√∫meros pares e %i n√∫meros √≠mpares no vetor.", qtd_par, qtd_impar);
 	
 	free(v);
 }
