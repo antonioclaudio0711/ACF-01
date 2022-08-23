@@ -10,11 +10,11 @@ main(){
     
     conteudo = (char *) malloc(tamanho * sizeof(char));
 
-    printf("Digite o número de caracteres da palavra que será inserida:");
+    printf("Digite o nÃºmero de caracteres da palavra que serÃ¡ inserida:");
     scanf("%i", &tamanho);
 
 
-    printf("Digite o conteúdo da palavra: ");
+    printf("Digite o conteÃºdo da palavra: ");
     scanf(" %[^\n]", conteudo);
     
     i = 0;
