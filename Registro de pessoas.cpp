@@ -19,11 +19,11 @@ void preencher(pessoa *ptr, int tamanho){
 		printf("\nPREENCHENDO O REGISTRO\n");
 		printf("Insira o nome da pessoa a ser cadastrada:");
 		scanf("%s", &ptr[i].nome);
-		printf("\nInsira o CPF da pessoa a ser cadastrada (sem traço):");
+		printf("\nInsira o CPF da pessoa a ser cadastrada (sem traÃ§o):");
 		scanf("%i", &ptr[i].CPF);
 		printf("\nInsira o dia de nascimento da pessoa:");
 		scanf("%i", &ptr[i].data.dia);
-		printf("\nInsira de forma numérica o mês de nascimento da pessoa:");
+		printf("\nInsira de forma numÃ©rica o mÃªs de nascimento da pessoa:");
 		scanf("%i", &ptr[i].data.mes);
 		printf("\nInsira o ano de nascimento da pessoa:");
 		scanf("%i", &ptr[i].data.ano);
@@ -48,7 +48,7 @@ main() {
 	
 	ponteiro = (pessoa *) malloc(tamanho * sizeof(pessoa));
 	
-	printf("Informe o número de registros a serem adicionados:");
+	printf("Informe o nÃºmero de registros a serem adicionados:");
 	scanf("%i", &tamanho);
 	preencher(ponteiro, tamanho);
 	mostrar(ponteiro, tamanho);
