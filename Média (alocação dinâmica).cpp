@@ -21,7 +21,7 @@ main() {
 	}
 	
 	media = soma / quantidade_alunos;
-	printf("\nA média aritmética das notas inseridas é: %.2f", media);
+	printf("\nA mÃ©dia aritmÃ©tica das notas inseridas Ã©: %.2f", media);
 	
 	free(notas);
 }
