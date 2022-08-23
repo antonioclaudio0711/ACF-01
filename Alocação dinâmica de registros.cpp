@@ -15,11 +15,11 @@ main(){
 	aluno *ponteiro;
 	ponteiro = (aluno *) malloc(registros * sizeof(aluno));
 	
-	printf("Insira o número de registros a serem alocados:");
+	printf("Insira o nÃºmero de registros a serem alocados:");
 	scanf("%i", &registros);
 	
 	for(int i=0; i<registros; i++) {
-		printf("\nInsira o número da matrícula do aluno:");
+		printf("\nInsira o nÃºmero da matrÃ­cula do aluno:");
 		scanf("%i", &ponteiro[i].matricula);
 		printf("\nInsira o primeiro nome do aluno (sem acentos):");
 		scanf("%s", &ponteiro[i].primeiro_nome);
@@ -30,7 +30,7 @@ main(){
 	
 	printf("\nOs registros inseridos foram:\n");
 	for(int i=0; i<registros; i++) {
-		printf("Número de matrícula: %i\n", ponteiro[i].matricula);
+		printf("NÃºmero de matrÃ­cula: %i\n", ponteiro[i].matricula);
 		printf("Primeiro nome: %s\n", ponteiro[i].primeiro_nome);
 		printf("Ano de nascimento: %i\n", ponteiro[i].ano_nascimento);
 		printf("\n");
