@@ -39,24 +39,24 @@ main() {
 	do {
 		printf("\n");
 		printf("\n****************************************\n");
-		printf("	    MENU DE OPÇÕES			 \n");
+		printf("	    MENU DE OPÃ‡Ã•ES			 \n");
 		printf("1 - Cadastrar cliente\n");
 		printf("2 - Cadastrar recebimento\n");
 		printf("3 - Sair\n");
 		printf("****************************************\n");
-		printf("Selecione uma das opções apresentadas no menu: ");
+		printf("Selecione uma das opÃ§Ãµes apresentadas no menu: ");
 		scanf("%i",&escolha);
 		printf("\n");
 		
 		switch(escolha) {
 			case 1:
-				printf("Você escolheu a opção de 'Cadastrar cliente'!\n");
+				printf("VocÃª escolheu a opÃ§Ã£o de 'Cadastrar cliente'!\n");
 				inputCliente();
 				
 				break;
 				
 			case 2:
-				printf("Você selecionou a opção de 'Cadastrar recebimento'!\n");
+				printf("VocÃª selecionou a opÃ§Ã£o de 'Cadastrar recebimento'!\n");
 				inputRecebimento();
 				break;
 				
@@ -66,7 +66,7 @@ main() {
 				break;
 				
 			default:
-				printf("Selecione uma opção válida!\n");
+				printf("Selecione uma opÃ§Ã£o vÃ¡lida!\n");
 				printf("\n");
 				getch();
 				break;
@@ -86,7 +86,7 @@ void inputCliente() {
 		printf("Problemas na abertura do arquivo!");
 	} else {
 		do {
-			printf("Insira o código do cliente:");
+			printf("Insira o cÃ³digo do cliente:");
 			scanf("%i", &cli.cod_cliente);
 			
 			fflush(stdin);
@@ -98,7 +98,7 @@ void inputCliente() {
 			gets(cli.sobrenome);
 			
 			fflush(stdin);
-			printf("Insira o endereço do cliente:");
+			printf("Insira o endereÃ§o do cliente:");
 			gets(cli.endereco);
 			
 			fwrite(&cli, sizeof(CLIENTE), 1, arquivo);
@@ -120,16 +120,16 @@ void inputRecebimento() {
 		printf("Problemas na abertura do arquivo!");
 	} else {
 		do {
-			printf("Insira o código do cliente:");
+			printf("Insira o cÃ³digo do cliente:");
 			scanf("%i", &rec.cod_cliente);
 			
-			printf("Insira o número da conta:");
+			printf("Insira o nÃºmero da conta:");
 			scanf("%i", &rec.num_conta);
 			
 			printf("Insira o valor do documento:");
 			scanf("%f", &rec.valor_documento);
 			
-			printf("Insira a data de emissão:");
+			printf("Insira a data de emissÃ£o:");
 			scanf("%i %i %i", &rec.data_emissao.dia, &rec.data_emissao.mes, &rec.data_emissao.ano);
 			
 			printf("Insira a data de validade:");
